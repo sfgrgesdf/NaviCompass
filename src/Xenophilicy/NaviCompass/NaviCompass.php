@@ -178,14 +178,14 @@ class NaviCompass extends PluginBase implements Listener {
             }
             if(isset($search)){
                 if($search == "url"){
-                    $form->addButton($value[0]."\n§r§o§8Tap to transfer", 1, "http://".$file);
+                    $form->addButton($value[0]."\n§r§aGo to this server", 1, "http://".$file);
                 }
                 if($search == "path"){
-                    $form->addButton($value[0]."\n§r§o§8Tap to transfer", 0, $file);
+                    $form->addButton($value[0]."\n§r§aGo to this server", 0, $file);
                 }
             }
             else{
-                $form->addButton($value[0]."\n§r§o§8Tap to transfer");
+                $form->addButton($value[0]."\n§r§aGo to this server");
             }
         }
         $form->sendToPlayer($player);
